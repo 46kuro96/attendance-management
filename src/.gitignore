@@ -1,3 +1,5 @@
+docker/mysql/data/
+
 /node_modules
 /public/hot
 /public/storage
@@ -13,3 +15,4 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+.env.testing

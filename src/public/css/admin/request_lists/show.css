@@ -1,0 +1,105 @@
+body {
+    background-color: #f0eff2;
+}
+
+.container {
+    max-width: 900px;
+    margin: 32px auto;
+    background: #f0eff2;
+    padding: 24px 28px;
+    border-radius: 12px;
+}
+
+/* 見出し */
+.container h2 {
+    margin: 0 0 16px;
+    font-size: 28px;
+    font-weight: 800;
+    position: relative;
+    padding-left: 12px;
+    margin-bottom: 30px;
+}
+
+.container h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    bottom: 4px;
+    width: 4px;
+    background: #111;
+    /* 黒いアクセントバー */
+    border-radius: 2px;
+}
+
+.card {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #f0eff2;
+    margin-top: 16px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.show-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #f0eff2;
+    margin-top: 16px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.show-table td,
+.show-table th {
+    line-height: 45px;
+    /* テキストを縦中央にして高さを出す */
+}
+
+.show-table th {
+    padding: 12px 16px;
+    border-bottom: 2px solid #f0eff2;
+    text-align: left;
+    padding: 14px 0 14px 50px;
+    vertical-align: middle;
+    font-weight: 400;
+}
+
+.show-table td {
+    padding: 12px 16px;
+    border-bottom: 2px solid #f0eff2;
+    vertical-align: middle;
+    padding: 14px 0 14px 0px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+
+.btn-primary {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    padding: 8px 24px;
+    border-radius: 6px;
+}
+
+.btn-disabled {
+    background-color: #696969;
+    color: #fff;
+    cursor: not-allowed;
+    border: none;
+    font-size: 20px;
+    padding: 8px 10px;
+    border-radius: 6px;
+}

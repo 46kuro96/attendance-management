@@ -1,0 +1,51 @@
+.header {
+    background-color: #000;
+    padding: 20px 20px;
+}
+
+.header .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 90%;
+    height: 40px;
+}
+
+.header .nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.header .nav-links a,
+.header .nav-links button {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+@media (min-width: 1400px) and (max-width: 1540px) {
+    .container {
+        max-width: 700px;
+    }
+    .header {
+        padding: 24px 32px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 850px) {
+    .container {
+        max-width: 600px;
+    }
+
+    .header {
+        padding: 20px 24px;
+    }
+}

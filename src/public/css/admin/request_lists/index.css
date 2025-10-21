@@ -1,0 +1,113 @@
+body {
+    background-color: #f0eff2;
+}
+
+.container {
+    max-width: 900px;
+    margin: 32px auto;
+    background: #f0eff2;
+    padding: 24px 28px;
+    border-radius: 12px;
+}
+
+/* 見出し */
+.container h2 {
+    margin: 0 0 16px;
+    font-size: 28px;
+    font-weight: 800;
+    position: relative;
+    padding-left: 12px;
+    margin-bottom: 30px;
+}
+
+.container h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    bottom: 4px;
+    width: 4px;
+    background: #111;
+    /* 黒いアクセントバー */
+    border-radius: 2px;
+}
+
+.req-tabs {
+    display: flex;
+    align-items: flex-end;
+    gap: 32px;
+    border-bottom: 2px solid #cfd3d9;
+    /* グレーのベース線（画像の細いライン） */
+    padding: 0 8px;
+    margin: 0 0 16px;
+}
+
+.req-tabs .tab {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 2px 10px;
+    text-decoration: none;
+    color: #8b8f98;
+    /* 非アクティブは薄め */
+    font-weight: 700;
+    letter-spacing: .02em;
+}
+
+
+.req-tabs .tab::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: transparent;
+    border-radius: 2px;
+    transition: background .18s ease;
+}
+
+/* アクティブ状態：文字濃く&黒ラインを表示 */
+.req-tabs .tab.is-active {
+    color: #111;
+}
+
+.req-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #f0eff2;
+    margin-top: 16px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.req-table td,
+.req-table th {
+    line-height: 45px;
+    /* テキストを縦中央にして高さを出す */
+}
+
+.req-table th {
+    border-bottom: 2px solid #f0eff2;
+    color: #737373;
+    text-align: left;
+    padding: 4px 0 4px 50px;
+    vertical-align: middle;
+    font-weight: 400;
+}
+
+.req-table td {
+    border-bottom: 2px solid #f0eff2;
+    color: #737373;
+    vertical-align: middle;
+    text-align: center;
+    padding: 4px 0 4px 0px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.req-table a {
+    color: #111;
+    text-decoration: none;
+}

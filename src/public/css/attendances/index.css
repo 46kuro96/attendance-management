@@ -1,0 +1,118 @@
+body {
+    background-color: #f0eff2;
+}
+
+.container.list {
+    max-width: 960px;
+    margin: 32px auto;
+    background: #f0eff2;
+    padding: 24px 28px;
+    border-radius: 12px;
+}
+
+/* 見出し */
+.container.list h2 {
+    margin: 0 0 16px;
+    font-size: 20px;
+    font-weight: 800;
+    position: relative;
+    padding-left: 12px;
+}
+
+.container.list h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    bottom: 4px;
+    width: 4px;
+    background: #111;
+    /* 黒いアクセントバー */
+    border-radius: 2px;
+}
+
+/* 月ナビ */
+.list-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin: 10px 0 18px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px 12px;
+    border: 1px solid #e9eaee;
+}
+
+.list-nav .ym {
+    font-weight: 800;
+    letter-spacing: 0.02em;
+}
+
+.nav-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: #111;
+    background: #fff;
+    padding: 6px 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.img{
+    width: 20px;
+    height: 20px;
+}
+
+.nav-btn:hover {
+    background: #e9eaee;
+}
+
+/* テーブル（グリッド） */
+.table {
+    display: grid;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.table .thead,
+.table .row {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr 0.8fr;
+    /* 日付/出/退/休/合/詳細 割合で設定*/
+    gap: 8px;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* ヘッダ行 */
+.table .thead {
+    background: #f3f4f6;
+    border: 1px solid #e8e8ec;
+    color: #252525;
+    font-weight: 700;
+    padding: 10px 12px;
+    border-radius: 8px;
+}
+
+/* データ行 */
+.table .row {
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 10px 12px;
+}
+
+/* 詳細リンク */
+.link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #1f1f1f;
+    display: inline-block;
+    padding: 4px 6px;
+    border-radius: 6px;
+}

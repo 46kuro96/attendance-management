@@ -1,0 +1,89 @@
+body {
+    background: #f0eff2;
+}
+
+.c-att {
+    max-width: 1400px;
+    width: 100%;
+    margin: 100px auto;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.badge {
+    margin-bottom: 16px;
+}
+
+.tag {
+    display: inline-block;
+    background: #c8c8c8;
+    color: #696969;
+    border-radius: 18px;
+    padding: 6px 12px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.tag-gray {
+    background: #c8c8c8;
+    color: #696969;
+}
+
+.date {
+    font-size: 26px;
+    margin-bottom: 16px;
+}
+
+.time {
+    font-size: 80px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 42px;
+}
+
+.actions .btn-row {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 48px;
+    border-radius: 14px;
+    border: none;
+    font-size: 22px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.btn-black {
+    background: #000;
+    color: #fff;
+}
+
+.btn-white {
+    background: #fff;
+    color: #000;
+}
+
+.msg {
+    margin-top: 24px;
+    font-weight: 800;
+}
+
+.flash {
+    margin-top: 16px;
+}
+
+.flash.success {
+    color: #1a7f37;
+}
+
+.flash.error {
+    color: #b00020;
+}
+
+
+
+

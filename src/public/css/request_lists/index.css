@@ -1,0 +1,95 @@
+body {
+    background-color: #f0eff2;
+}
+
+.container {
+    max-width: 960px;
+    margin: 32px auto;
+    background: #f0eff2;
+    padding: 24px 28px;
+    border-radius: 12px;
+}
+
+/* 見出し */
+.container h2 {
+    margin: 0 0 16px;
+    font-size: 28px;
+    font-weight: 800;
+    position: relative;
+    padding-left: 12px;
+    margin-bottom: 30px;
+}
+
+.container h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    bottom: 4px;
+    width: 4px;
+    background: #111;
+    /* 黒いアクセントバー */
+    border-radius: 2px;
+}
+
+.req-tabs {
+    display: flex;
+    border-bottom: none;
+    font-size: 20px;
+    gap: 100px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #000;
+}
+
+.req-tabs a {
+    margin-left: 50px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+.req-tabs a.is-active {
+    font-weight: 700;
+    color: #000;
+}
+
+.req-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #f0eff2;
+    margin-top: 16px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .03);
+}
+
+.req-table td,
+.req-table th {
+    line-height: 45px;
+    /* テキストを縦中央にして高さを出す */
+}
+
+.req-table th {
+    padding: 5px 12px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    color: #737373;
+    border-bottom: 2px solid #f0eff2;
+}
+
+.req-table td {
+    padding: 5px 12px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    color: #737373;
+    border-bottom: 2px solid #f0eff2;
+}
+
+.req-table a {
+    color: #000;
+    text-decoration: none;
+}

@@ -1,4 +1,4 @@
-version: '3.8'
+
 
 services:
   nginx:
@@ -17,7 +17,8 @@ services:
       - ./src:/var/www/
 
   mysql:
-    image: mysql:8.0.26
+    image: mysql:8.0-oracle # ARM対応のMySQL公式イメージ
+    platform: linux/amd64 # 明示的に指定（M1/M2向け）
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: laravel_db
@@ -30,7 +31,8 @@ services:
       - ./docker/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
 
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin
+    image: phpmyadmin/phpmyadmin:5.2
+    platform: linux/amd64 # 明示的に指定（M1/M2向け）
     environment:
       - PMA_ARBITRARY=1
       - PMA_HOST=mysql
@@ -40,3 +42,11 @@ services:
       - mysql
     ports:
       - 8080:80
+
+  mailhog:
+    image: mailhog/mailhog
+    platform: linux/amd64
+    container_name: attendance-management-mailhog
+    ports:
+    - "8025:8025" # WebUI
+    - "1025:1025" # SMTP

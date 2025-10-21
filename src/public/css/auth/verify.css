@@ -1,0 +1,53 @@
+.verify-wrap {
+    max-width: 900px;
+    width: 90%;
+    margin: 80px auto;
+    background: #fff;
+    padding: 80px 40px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.verify-wrap .lead {
+    font-weight: bold;
+    line-height: 1.9;
+    margin: 0 0 28px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #ddd;
+    color: #000;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    padding: 12px 28px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.verify-main {
+    margin: 10px 0 18px;
+}
+
+.verify-resend {
+    margin-top: 6px;
+}
+
+.link-like {
+    background: none;
+    border: none;
+    color: #0073cc;
+    /* 青リンク風 */
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    font: inherit;
+}
+
+.flash {
+    color: #1a7f37;
+    /* 成功メッセージ用グリーン */
+    margin-top: 10px;
+    font-size: 14px;
+}

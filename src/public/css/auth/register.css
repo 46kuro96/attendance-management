@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    width: 90%;
+    margin: 60px auto;
+    background: #fff;
+    padding: 10px 50px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+.container label {
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 25px 0 5px 5px;
+}
+
+.container input {
+    width: 100%;
+    padding: 16px 12px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    font-size: 18px;
+    margin: 0;
+}
+
+.container button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 12px 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.container a {
+    display: block;
+    margin-top: 25px;
+    color: #0073cc;
+    text-decoration: none;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: left;
+}
