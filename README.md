@@ -78,7 +78,7 @@ MAIL_FROM_ADDRESS=admin@example.com
 本プロジェクトではPHPUnitによる自動テストを導入しています。
 **実行コマンド**
 ```bash
-php artisan test
+php artisan test --testsuite=Feature
 ```
 
 ## URL
